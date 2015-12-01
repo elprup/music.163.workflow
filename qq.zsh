@@ -1,0 +1,8 @@
+play_cmd='(function (){document.querySelector("#btnplay").click();})()'
+prev_cmd='(function (){document.querySelector(".prev_bt").click();})()'
+next_cmd='(function (){document.querySelector(".next_bt").click();})()'
+get_title_cmd='(function (){return document.querySelector("#divplayer .music_name").title;})()'
+get_artist_cmd='(function (){return document.querySelector("#divplayer .singer_name").title;})()'
+open_fav_cmd='(function (){document.querySelector("a.icn-add").click();})()'
+add_fav_cmd='(function (){document.querySelector("#g_iframe").contentDocument.querySelector(".zcnt .s-fc0").click();})()'
+web_url='y.qq.com'

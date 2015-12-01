@@ -1,12 +1,6 @@
 export PATH=$PATH:/usr/local/bin
 
-play_cmd='(function (){document.querySelector(".ply").click();})()'
-prev_cmd='(function (){document.querySelector(".prv").click();})()'
-next_cmd='(function (){document.querySelector(".nxt").click();})()'
-get_title_cmd='(function (){return document.querySelector("a.fc1").text;})()'
-get_artist_cmd='(function (){return document.querySelector("span.by").firstChild.title;})()'
-open_fav_cmd='(function (){document.querySelector("a.icn-add").click();})()'
-add_fav_cmd='(function (){document.querySelector("#g_iframe").contentDocument.querySelector(".zcnt .s-fc0").click();})()'
+source xiami.zsh
 
 # $1: command $2: tab id
 execute() {
@@ -20,7 +14,7 @@ execute() {
 }
 
 get_tab() {
-	echo `chrome-cli list links | grep music.163.com | awk -F'[:\\\[\\\] ]' '{print $2}'`
+	echo `chrome-cli list links | grep $web_url | awk -F'[:\\\[\\\] ]' '{print $2}'`
 }
 
 get_title_with_status() {
