@@ -13,7 +13,7 @@ web_url=''
 tab=''
 
 # override defaults
-source 163.zsh
+source `python config.py get_source_string`.zsh
 
 # $1: command $2: tab id
 execute() {

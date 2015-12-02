@@ -107,6 +107,17 @@
 				<string></string>
 			</dict>
 		</array>
+		<key>93CD0CAA-C3A4-44AF-BD52-EA99E88D550B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DE5B4246-072F-4D83-95D3-6981195E6CF7</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
 		<key>B2261162-5FDF-472B-808B-1B75177F574A</key>
 		<array>
 			<dict>
@@ -148,11 +159,11 @@
 				<key>argument</key>
 				<integer>0</integer>
 				<key>hotkey</key>
-				<integer>105</integer>
+				<integer>122</integer>
 				<key>hotmod</key>
 				<integer>8388608</integer>
 				<key>hotstring</key>
-				<string>F13</string>
+				<string>F1</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -170,6 +181,8 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
 				<key>escaping</key>
 				<integer>127</integer>
 				<key>script</key>
@@ -193,11 +206,11 @@ prev</string>
 				<key>argument</key>
 				<integer>0</integer>
 				<key>hotkey</key>
-				<integer>107</integer>
+				<integer>120</integer>
 				<key>hotmod</key>
 				<integer>8388608</integer>
 				<key>hotstring</key>
-				<string>F14</string>
+				<string>F2</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -215,6 +228,8 @@ prev</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
 				<key>escaping</key>
 				<integer>127</integer>
 				<key>script</key>
@@ -238,11 +253,11 @@ play</string>
 				<key>argument</key>
 				<integer>0</integer>
 				<key>hotkey</key>
-				<integer>100</integer>
+				<integer>99</integer>
 				<key>hotmod</key>
 				<integer>8388608</integer>
 				<key>hotstring</key>
-				<string>F8</string>
+				<string>F3</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -285,6 +300,8 @@ play</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
 				<key>escaping</key>
 				<integer>127</integer>
 				<key>script</key>
@@ -308,11 +325,11 @@ next</string>
 				<key>argument</key>
 				<integer>0</integer>
 				<key>hotkey</key>
-				<integer>113</integer>
+				<integer>118</integer>
 				<key>hotmod</key>
 				<integer>8388608</integer>
 				<key>hotstring</key>
-				<string>F15</string>
+				<string>F4</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -335,11 +352,11 @@ next</string>
 				<key>argument</key>
 				<integer>0</integer>
 				<key>hotkey</key>
-				<integer>106</integer>
+				<integer>96</integer>
 				<key>hotmod</key>
 				<integer>8388608</integer>
 				<key>hotstring</key>
-				<string>F16</string>
+				<string>F5</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -357,6 +374,8 @@ next</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
 				<key>escaping</key>
 				<integer>127</integer>
 				<key>script</key>
@@ -375,6 +394,8 @@ get_song_info</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
 				<key>escaping</key>
 				<integer>127</integer>
 				<key>script</key>
@@ -400,11 +421,11 @@ add_fav</string>
 				<key>argumenttext</key>
 				<string>♥️</string>
 				<key>hotkey</key>
-				<integer>64</integer>
+				<integer>97</integer>
 				<key>hotmod</key>
 				<integer>8388608</integer>
 				<key>hotstring</key>
-				<string>F17</string>
+				<string>F6</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -441,6 +462,58 @@ add_fav</string>
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
 			<string>311BAE84-A505-4786-821F-1CC9DA708357</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>ms</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>script</key>
+				<string>python config.py alfred</string>
+				<key>title</key>
+				<string>Music Select</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>93CD0CAA-C3A4-44AF-BD52-EA99E88D550B</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>python config.py set_source "{query}"</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>DE5B4246-072F-4D83-95D3-6981195E6CF7</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
@@ -504,6 +577,11 @@ add_fav</string>
 			<key>ypos</key>
 			<real>180</real>
 		</dict>
+		<key>93CD0CAA-C3A4-44AF-BD52-EA99E88D550B</key>
+		<dict>
+			<key>ypos</key>
+			<real>730</real>
+		</dict>
 		<key>B2261162-5FDF-472B-808B-1B75177F574A</key>
 		<dict>
 			<key>ypos</key>
@@ -513,6 +591,11 @@ add_fav</string>
 		<dict>
 			<key>ypos</key>
 			<real>10</real>
+		</dict>
+		<key>DE5B4246-072F-4D83-95D3-6981195E6CF7</key>
+		<dict>
+			<key>ypos</key>
+			<real>730</real>
 		</dict>
 	</dict>
 	<key>webaddress</key>
